@@ -1,0 +1,275 @@
+$gray: rgba(0,0,0,.25);
+$violet: #2B193D;
+$magenta: #FF2465;
+$green: #38ffd1;
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin hyphens($value: "manual") {
+  @each $prefix in -webkit-, -moz-, -o-, "" {
+    #{$prefix}hyphens: $value;
+  }
+}
+
+#header-outer[data-lhe="animated_underline"] header#top {
+
+  #logo {
+    font-family: 'Rakkas', serif;
+    font-size: 40px;
+    font-weight: normal;
+    color: $magenta;
+  }
+
+  nav >ul >li >a {
+    font-size: 18px;
+  }
+}
+
+header#top nav >ul >li[class*="button_solid_color"] >a,
+body #header-outer.transparent header#top nav >ul >li[class*="button_solid_color"] >a,
+#header-outer[data-lhe="animated_underline"] header#top nav >ul >li[class*="button_solid_color"] >a {
+  color: $violet !important;
+  font-weight: 700;
+}
+
+#header-outer.transparent.dark-slide >header#top nav >ul >li[class*="button_solid_color"] >a:hover,
+header#top nav >ul >li[class*="button_solid_color"] >a,
+body #header-outer.transparent header#top nav >ul >li[class*="button_solid_color"] >a,
+#header-outer[data-lhe="animated_underline"] header#top nav >ul >li[class*="button_solid_color"] >a,
+#header-outer[data-lhe="animated_underline"].transparent.dark-slide header#top nav >ul >li[class*="button_solid_color"] >a:hover {
+  color: $violet !important;
+}
+
+#page-header-wrap {
+  display:none !important;
+}
+
+body {
+  #ajax-content-wrap {
+
+    //General
+    p {
+      font-weight: 300;
+      color:$violet;
+    }
+
+    //Hero
+    #hero {
+      margin-top: 40px !important;
+      @media only screen and (min-width: 1000px) {
+        margin-top: 150px !important;
+        background-image: url('http://krachtkern.com/staging/wp-content/uploads/2018/05/logo.svg');
+        background-size: 400px 412px;
+        background-position: bottom 10px right -10px;
+        background-repeat: no-repeat;
+      }
+      h1 {
+        @include hyphens(auto);
+      }
+    }
+
+    //Blockquotes
+    .testimonial_slider blockquote, .nectar_single_testimonial {
+      position: relative;
+
+      .open-quote {
+        display: none;
+      }
+
+      .inner p {
+        color: $gray;
+        padding-left: 2.5em;
+      }
+
+      &:before {
+        position: absolute;
+        content: "“";
+        font-size: 4em;
+        color: $gray;
+        display: block;
+        border: 0;
+        margin-top: 0.25em;
+      }
+    }
+
+    // Buttons
+    .nectar-button.jumbo {
+      font-size: 28px;
+    }
+    .nectar-button span {
+      color:$violet;
+    }
+
+    //Why
+    #why {
+      padding-top: 40px !important;
+      padding-bottom: 0px !important;
+      @media only screen and (min-width: 1000px) {
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+      }
+    }
+
+    //How it helps
+    #how {
+      padding-top: 50px !important;
+      padding-bottom: 100px !important;
+      @media only screen and (min-width: 1000px) {
+        padding-top: 100px !important;
+        // padding-bottom: 100px !important;
+        h2 {
+          padding-bottom: 50px !important;
+        }
+      }
+      p {
+        color: white;
+        font-weight: lighter;
+        opacity: .9;
+      }
+    }
+
+    //Mid CTA
+    #midcta {
+      padding-top: 40px !important;
+      padding-bottom: 120px !important;
+      @media only screen and (min-width: 768px) {
+        padding-bottom: 200px !important;
+      }
+      @media only screen and (min-width: 1000px) {
+        padding-top: 100px !important;
+        padding-bottom: 280px !important;
+      }
+    }
+
+
+    //Testimonails
+
+    .testimonial-content {
+
+      p {
+        color: white;
+        @include flex(1 auto);
+
+        &:before {
+          position: absolute;
+          content: "“";
+          font-size: 3em;
+          color: white;
+          display: block;
+          border: 0;
+          margin-top: -0.25em;
+          margin-left: -0.05em;
+          @media only screen and (min-width: 1000px) {
+            font-size: 6em;
+            margin-top: 0.25em;
+            margin-left: -0.45em;
+          }
+        }
+      }
+
+      @media only screen and (min-width: 1000px) {
+        @include flexbox();
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .testimonial-image {
+      @media only screen and (min-width: 1000px) {
+        @include flex(3 100em);
+        margin: 0;
+      }
+    }
+
+    .strong-view.controls-style-buttons .wpmslider-next:before, .strong-view.controls-style-buttons .wpmslider-prev:before {
+      color: white;
+    }
+
+    //Contact
+    #contact {
+      padding-bottom: 100px !important;
+      @media only screen and (min-width: 768px) {
+        padding-bottom: 200px !important;
+      }
+      @media only screen and (min-width: 1000px) {
+        padding-bottom: 280px !important;
+
+        margin-top: 150px !important;
+        background-image: url('http://krachtkern.com/staging/wp-content/uploads/2018/05/logo.svg');
+        background-size: 400px 412px;
+        background-position: bottom 150px right -10px;
+        background-repeat: no-repeat;
+      }
+
+      p {
+        padding: 0;
+      }
+      span.wpcf7-list-item {
+        margin: 0;
+        padding: 35px 0;
+      }
+      input[type=submit] {
+        background-color: $green !important;
+
+        padding: 10px 30px !important;
+        width: 100%;
+
+        color: $violet;
+        font-size: 28px;
+        font-family: inherit;
+        font-weight: 700;
+      }
+      .minimal-form-input span.wpcf7-not-valid-tip {
+        box-shadow: none;
+        font-size: 14px;
+        padding: 0;
+      }
+      .wpcf7-not-valid {
+        border-color: $magenta;
+      }
+      .wpcf7 .wpcf7-response-output {
+        font-size: 14px;
+        font-weight: 700;
+        color: $magenta !important;
+        line-height: 1.2;
+        padding: 20;
+      }
+    }
+
+    //Dividers
+    .divider {
+      img {
+        width: 100px;
+        margin-top:-50px;
+      }
+    }
+
+
+  }
+}

@@ -1,0 +1,173 @@
+@charset "UTF-8";
+#header-outer[data-lhe="animated_underline"] header#top #logo {
+  font-family: 'Rakkas', serif;
+  font-size: 40px;
+  font-weight: normal;
+  color: #FF2465; }
+#header-outer[data-lhe="animated_underline"] header#top nav > ul > li > a {
+  font-size: 18px; }
+
+header#top nav > ul > li[class*="button_solid_color"] > a,
+body #header-outer.transparent header#top nav > ul > li[class*="button_solid_color"] > a,
+#header-outer[data-lhe="animated_underline"] header#top nav > ul > li[class*="button_solid_color"] > a {
+  color: #2B193D !important;
+  font-weight: 700; }
+
+#header-outer.transparent.dark-slide > header#top nav > ul > li[class*="button_solid_color"] > a:hover,
+header#top nav > ul > li[class*="button_solid_color"] > a,
+body #header-outer.transparent header#top nav > ul > li[class*="button_solid_color"] > a,
+#header-outer[data-lhe="animated_underline"] header#top nav > ul > li[class*="button_solid_color"] > a,
+#header-outer[data-lhe="animated_underline"].transparent.dark-slide header#top nav > ul > li[class*="button_solid_color"] > a:hover {
+  color: #2B193D !important; }
+
+#page-header-wrap {
+  display: none !important; }
+
+body #ajax-content-wrap p {
+  font-weight: 300;
+  color: #2B193D; }
+body #ajax-content-wrap #hero {
+  margin-top: 40px !important; }
+  @media only screen and (min-width: 1000px) {
+    body #ajax-content-wrap #hero {
+      margin-top: 150px !important;
+      background-image: url("http://krachtkern.com/staging/wp-content/uploads/2018/05/logo.svg");
+      background-size: 400px 412px;
+      background-position: bottom 10px right -10px;
+      background-repeat: no-repeat; } }
+  body #ajax-content-wrap #hero h1 {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto; }
+body #ajax-content-wrap .testimonial_slider blockquote, body #ajax-content-wrap .nectar_single_testimonial {
+  position: relative; }
+  body #ajax-content-wrap .testimonial_slider blockquote .open-quote, body #ajax-content-wrap .nectar_single_testimonial .open-quote {
+    display: none; }
+  body #ajax-content-wrap .testimonial_slider blockquote .inner p, body #ajax-content-wrap .nectar_single_testimonial .inner p {
+    color: rgba(0, 0, 0, 0.25);
+    padding-left: 2.5em; }
+  body #ajax-content-wrap .testimonial_slider blockquote:before, body #ajax-content-wrap .nectar_single_testimonial:before {
+    position: absolute;
+    content: "“";
+    font-size: 4em;
+    color: rgba(0, 0, 0, 0.25);
+    display: block;
+    border: 0;
+    margin-top: 0.25em; }
+body #ajax-content-wrap .nectar-button.jumbo {
+  font-size: 28px; }
+body #ajax-content-wrap .nectar-button span {
+  color: #2B193D; }
+body #ajax-content-wrap #why {
+  padding-top: 40px !important;
+  padding-bottom: 0px !important; }
+  @media only screen and (min-width: 1000px) {
+    body #ajax-content-wrap #why {
+      padding-top: 100px !important;
+      padding-bottom: 100px !important; } }
+body #ajax-content-wrap #how {
+  padding-top: 50px !important;
+  padding-bottom: 100px !important; }
+  @media only screen and (min-width: 1000px) {
+    body #ajax-content-wrap #how {
+      padding-top: 100px !important; }
+      body #ajax-content-wrap #how h2 {
+        padding-bottom: 50px !important; } }
+  body #ajax-content-wrap #how p {
+    color: white;
+    font-weight: lighter;
+    opacity: .9; }
+body #ajax-content-wrap #midcta {
+  padding-top: 40px !important;
+  padding-bottom: 120px !important; }
+  @media only screen and (min-width: 768px) {
+    body #ajax-content-wrap #midcta {
+      padding-bottom: 200px !important; } }
+  @media only screen and (min-width: 1000px) {
+    body #ajax-content-wrap #midcta {
+      padding-top: 100px !important;
+      padding-bottom: 280px !important; } }
+body #ajax-content-wrap .testimonial-content p {
+  color: white;
+  -webkit-box-flex: 1 auto;
+  -moz-box-flex: 1 auto;
+  -webkit-flex: 1 auto;
+  -ms-flex: 1 auto;
+  flex: 1 auto; }
+  body #ajax-content-wrap .testimonial-content p:before {
+    position: absolute;
+    content: "“";
+    font-size: 3em;
+    color: white;
+    display: block;
+    border: 0;
+    margin-top: -0.25em;
+    margin-left: -0.05em; }
+    @media only screen and (min-width: 1000px) {
+      body #ajax-content-wrap .testimonial-content p:before {
+        font-size: 6em;
+        margin-top: 0.25em;
+        margin-left: -0.45em; } }
+@media only screen and (min-width: 1000px) {
+  body #ajax-content-wrap .testimonial-content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
+@media only screen and (min-width: 1000px) {
+  body #ajax-content-wrap .testimonial-image {
+    -webkit-box-flex: 3 100em;
+    -moz-box-flex: 3 100em;
+    -webkit-flex: 3 100em;
+    -ms-flex: 3 100em;
+    flex: 3 100em;
+    margin: 0; } }
+body #ajax-content-wrap .strong-view.controls-style-buttons .wpmslider-next:before, body #ajax-content-wrap .strong-view.controls-style-buttons .wpmslider-prev:before {
+  color: white; }
+body #ajax-content-wrap #contact {
+  padding-bottom: 100px !important; }
+  @media only screen and (min-width: 768px) {
+    body #ajax-content-wrap #contact {
+      padding-bottom: 200px !important; } }
+  @media only screen and (min-width: 1000px) {
+    body #ajax-content-wrap #contact {
+      padding-bottom: 280px !important;
+      margin-top: 150px !important;
+      background-image: url("http://krachtkern.com/staging/wp-content/uploads/2018/05/logo.svg");
+      background-size: 400px 412px;
+      background-position: bottom 150px right -10px;
+      background-repeat: no-repeat; } }
+  body #ajax-content-wrap #contact p {
+    padding: 0; }
+  body #ajax-content-wrap #contact span.wpcf7-list-item {
+    margin: 0;
+    padding: 35px 0; }
+  body #ajax-content-wrap #contact input[type=submit] {
+    background-color: #38ffd1 !important;
+    padding: 10px 30px !important;
+    width: 100%;
+    color: #2B193D;
+    font-size: 28px;
+    font-family: inherit;
+    font-weight: 700; }
+  body #ajax-content-wrap #contact .minimal-form-input span.wpcf7-not-valid-tip {
+    box-shadow: none;
+    font-size: 14px;
+    padding: 0; }
+  body #ajax-content-wrap #contact .wpcf7-not-valid {
+    border-color: #FF2465; }
+  body #ajax-content-wrap #contact .wpcf7 .wpcf7-response-output {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FF2465 !important;
+    line-height: 1.2;
+    padding: 20; }
+body #ajax-content-wrap .divider img {
+  width: 100px;
+  margin-top: -50px; }
+
+/*# sourceMappingURL=main.css.map */
